@@ -1,0 +1,100 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* background: #efdec1; */
+    background-image: url(assets/space4.jpg);
+    background-size: cover;
+    font-size: 15px;
+    font-family: 'Quicksand', "YuGothic", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 8px auto;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 16px;
+    opacity: 0.96;
+}
+
+.challengecard {
+    width: auto;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+#question {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#choices, #reward {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+#choices > li {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#choices > li:hover {
+    background: #f8f8f8;
+}
+
+#btn {
+    background: #3498db;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 4px 0 #2880b9;
+}
+
+#btn.disabled {
+    background: #cccccc;
+    box-shadow: 0 4px 0 #bbbbbb;
+    opacity: 0.7;
+}
+
+.display-none {
+    display: none;
+}
+
+#correct {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #006400;
+    margin-bottom: 10px;
+}
+
+#incorrect {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #dc143c;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer p {
+    color: #191970;
+    font-size: 14px;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+

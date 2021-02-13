@@ -21,7 +21,7 @@
         { q: ['How many earths fit into the sun?'], c: ['One million', 'One and a half million', 'Two millions'], r: ['Success: you get 1 water', 'Failure: you lose 1 fuel'] },
         { q: ['The day on which the Sun’s direct rays cross the celestial equator is called?'], c: ['the equinox', 'the aphelion', 'the solstice'], r: ['Success: you get 1 fuel and 1 element', 'Failure: you lose 1 water and an element'] },
         { q: ['Which planet has the biggest volcano?'], c: ['Mars', 'Uranus', 'Saturn'], r: ['Success: you get 1 water and 1 fuel', 'Failure: you lose 1 element'] },
-        { q: ['Which planet rotates faster?'], c: ['Jupiter', 'Uterus', 'Mars'], r: ['Success: you get 3 resources as you like', 'Failure: you go 3 steps behind and lose 1 fuel'] },
+        { q: ['Which planet rotates faster?'], c: ['Jupiter', 'Uranus', 'Mars'], r: ['Success: you get 3 resources as you like', 'Failure: you go 3 steps behind and lose 1 fuel'] },
         { q: ['Name the only planet in our solar system that has only one moon.'], c: ['Earth', 'Venus', 'Uranus'], r: ['Success: you can go 2 steps clockwise and get 1 water', 'Failure: you go back to the Earth'] },
         { q: ['Which planet is also called the god of war?'], c: ['Mars', 'Neptune', 'Saturn'], r: ['Success: you get 1 water and 1 food', 'Failure: you lose 1 element'] },
         { q: ['Which planet has the least gravity?'], c: ['Mercury', 'Venus', 'Earth'], r: ['Success: you get 1 water', 'Failure: you give one of your elements to another player'] },

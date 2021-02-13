@@ -11,21 +11,21 @@
     const scoreLabel = document.querySelector('#result > p');
 
     const quizSet = [
-        { q: ['How many moons Jupiter has?'], c: ['79', '53', '112'], r: ['Success: you get 1 Hydrogen or Helium', 'Failure: you lose 1 fuel or 1 element'] },
-        { q: ['Who first landed on the Moon?'], c: ['Neil Armstrong', 'Yurii Gagarin', 'John Glenn'], r: ['Success: you get 1 element from anoter player', 'Failure: you give 1 element to another player'] },
-        { q: ['Which chemical element has the greatest mass?'], c: ['Sulfur', 'Oxygen', 'Carbon'], r: ['Success: you gain 2 fuels', 'Failure: you skip your next turn'] },
-        { q: ['Regarding greek mythology, which god represented by a planet was eating his children?'], c: ['Saturn', 'Neptune', 'Jupiter'], r: ['Success: you get 2 new elements', 'Failure: you lose 1 element'] },
-        { q: ['What is the name of our galaxy system?'], c: ['Milky way', 'Solar System', 'Galaxy zoo'], r: ['Success: you get 1 Hydrogen', 'Failure: you lose 1 element whose name starts with a consonant'] },
-        { q: ['How many planets are there in our Solar System?'], c: ['8', '13', '9'], r: ['Success: you get 1 element of another player', 'Failure: you lose 1 fuel'] },
-        { q: ['What is the fourth planet from the sun?'], c: ['Mars', 'Earth', 'Uranus'], r: ['Success: you get 1 Silicon', 'Failure: you lose the last element you took'] },
-        { q: ['How many earths fit into the sun?'], c: ['One million', 'One and a half million', 'Two millions'], r: ['Success: you get 1 water', 'Failure: you lose 1 fuel'] },
-        { q: ['The day on which the Sun’s direct rays cross the celestial equator is called?'], c: ['the equinox', 'the aphelion', 'the solstice'], r: ['Success: you get 1 fuel and 1 element', 'Failure: you lose 1 water and an element'] },
-        { q: ['Which planet has the biggest volcano?'], c: ['Mars', 'Uranus', 'Saturn'], r: ['Success: you get 1 water and 1 fuel', 'Failure: you lose 1 element'] },
-        { q: ['Which planet rotates faster?'], c: ['Jupiter', 'Uranus', 'Mars'], r: ['Success: you get 3 resources as you like', 'Failure: you go 3 steps behind and lose 1 fuel'] },
-        { q: ['Name the only planet in our solar system that has only one moon.'], c: ['Earth', 'Venus', 'Uranus'], r: ['Success: you can go 2 steps clockwise and get 1 water', 'Failure: you go back to the Earth'] },
-        { q: ['Which planet is also called the god of war?'], c: ['Mars', 'Neptune', 'Saturn'], r: ['Success: you get 1 water and 1 food', 'Failure: you lose 1 element'] },
-        { q: ['Which planet has the least gravity?'], c: ['Mercury', 'Venus', 'Earth'], r: ['Success: you get 1 water', 'Failure: you give one of your elements to another player'] },
-        { q: ['Which is the brightest planet after the Sun?'], c: ['Venus', 'Saturn', 'Neptune'], r: ['Success: you get 1 element from another player', 'Failure: you lose 1 fuel'] }
+        { q: ['How many moons Jupiter has?'], c: ['79', '53', '112'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['Who first landed on the Moon?'], c: ['Neil Armstrong', 'Yurii Gagarin', 'John Glenn'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['Which chemical element has the greatest mass?'], c: ['Sulfur', 'Oxygen', 'Carbon'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['Regarding greek mythology, which god represented by a planet was eating his children?'], c: ['Saturn', 'Neptune', 'Jupiter'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['What is the name of our galaxy system?'], c: ['Milky way', 'Solar System', 'Galaxy zoo'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['How many planets are there in our Solar System?'], c: ['8', '13', '9'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['What is the fourth planet from the sun?'], c: ['Mars', 'Earth', 'Uranus'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['How many earths fit into the sun?'], c: ['One million', 'One and a half million', 'Two millions'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['The day on which the Sun’s direct rays cross the celestial equator is called?'], c: ['the equinox', 'the aphelion', 'the solstice'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['Which planet has the biggest volcano?'], c: ['Mars', 'Uranus', 'Saturn'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['Which planet rotates faster?'], c: ['Jupiter', 'Uranus', 'Mars'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['Name the only planet in our solar system that has only one moon.'], c: ['Earth', 'Venus', 'Uranus'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['Which planet is also called the god of war?'], c: ['Mars', 'Neptune', 'Saturn'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['Which planet has the least gravity?'], c: ['Mercury', 'Venus', 'Earth'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] },
+        { q: ['Which is the brightest planet after the Sun?'], c: ['Venus', 'Saturn', 'Neptune'], r: ['Success: You can get 1 element from another player', 'Failure: You should give 1 element to another player (if no element, skip your next turn)'] }
     ];
 
     let currentNum = 0;
